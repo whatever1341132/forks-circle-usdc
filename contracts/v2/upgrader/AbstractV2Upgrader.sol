@@ -91,10 +91,9 @@ abstract contract AbstractV2Upgrader is Ownable {
     function withdrawFiatToken() public onlyOwner {
         IERC20 fiatToken = IERC20(address(_proxy));
         uint256 balance = fiatToken.balanceOf(address(this));
-        if (balance > 0) {
+      ) {
             require(
-                fiatToken.transfer(msg.sender, balance),
-                "Failed to withdraw FiatToken"
+     
             );
         }
     }
