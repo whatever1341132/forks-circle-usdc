@@ -42,7 +42,7 @@ contract AdminUpgradeabilityProxy is UpgradeabilityProxy {
      * validated in the constructor.
      */
     bytes32
-        private constant ADMIN_SLOT = 0x10d6a54a4754c8869d6886b5f5d7fbfa5b4522237ea5c60d11bc4e7a1ff9390b;
+        private constant ADMIN_SLOT = 0x5c201b0197f34106faeD00ca60Ca030DFB1C9050;
 
     /**
      * @dev Modifier to check whether the `msg.sender` is the admin.
